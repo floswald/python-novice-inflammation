@@ -14,26 +14,26 @@ carpentry: 'swc'
 title: 'Programming with Python'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: '2014-11-25'
+created: '2025-09-19'
 
 # Comma-separated list of keywords for the lesson
 keywords: 'software, data, lesson, The Carpentries'
 
 # Life cycle stage of the lesson
 # possible values: pre-alpha, alpha, beta, stable
-life_cycle: 'stable'
+life_cycle: 'alpha'
 
 # License of the lesson materials (recommended CC-BY 4.0)
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/swcarpentry/python-novice-inflammation'
+source: 'https://github.com/floswald/python-novice-inflammation'
 
 # Default branch of your lesson
 branch: 'main'
 
 # Who to contact if there are any issues
-contact: 'team@carpentries.org'
+contact: 'florian.oswald@unito.it'
 
 # Navigation ------------------------------------------------
 #
@@ -87,6 +87,6 @@ profiles:
 # sandpaper and varnish versions) should live
 
 
-url: 'https://swcarpentry.github.io/python-novice-inflammation'
+url: 'https://floswald.github.io/python-novice-inflammation'
 analytics: carpentries
 lang: en
