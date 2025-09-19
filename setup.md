@@ -11,18 +11,18 @@ and instructions on how to obtain them are provided below.
 ## Install Python
 
 In this lesson, we will be using Python 3 with some of its most popular scientific libraries.
-One can install a plain-vanilla Python and all required libraries by hand.
+
+We provided the **compulsory installation instructions** for the python environment [here](https://floswald.github.io/2025-09-30-PythonIntro/#setup). Please follow those instructions!
 
 ## Obtain lesson materials
 
 1. Download [python-novice-inflammation-data.zip][zipfile1]
   and [python-novice-inflammation-code.zip][zipfile2].
-2. Create a folder called `swc-python` on your Desktop.
-3. Move downloaded files to `swc-python`.
-4. Unzip the files.
+1. Create a folder called `swc-python` in a location *that will easily find on your computer*. **Caution windows users!** Please keep in mind the inherent problems on the Windows platform of finding files. In other words, pay attention to [this warning](https://floswald.github.io/2025-09-30-PythonIntro/#issues-relating-to-windows-onedrive)
+2. Move downloaded files to `swc-python`.
+3. Unzip the files.
 
-You should see two folders called `data` and `code` in the `swc-python` directory on your
-Desktop.
+You should see two folders called `data` and `code` in the `swc-python` directory.
 
 ## Launch Python interface
 
@@ -50,7 +50,7 @@ If you're using a Unix shell application, such as Terminal app in macOS, Console
 in Linux, or [Git Bash][gitbash] on Windows, execute the following command:
 
 ```bash
-cd ~/Desktop/swc-python/data
+cd ~/swc-python/data
 ```
 
 :::::::::::::::::::::::::
