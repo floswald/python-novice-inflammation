@@ -3,6 +3,9 @@ permalink: index.html
 site: sandpaper::sandpaper_site
 ---
 
+**This course if part of the UniTo ESOMAS Master in Economics course Introduction to Progamming (Python, R and Shell)**. The course is taught by [Florian Oswald](https://floswald.github.io).
+
+
 The best way to learn how to program is to do something useful,
 so this introduction to Python is built around a common scientific task:
 **data analysis**.
