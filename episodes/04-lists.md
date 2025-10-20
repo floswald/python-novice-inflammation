@@ -376,6 +376,71 @@ list_for_slicing[-4:]
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+
+:::::::::::::::::::::::::::::::::::::::::  callout
+
+## Ranges are very different to point indices in Python
+
+Wait - here is something confusing:
+
+```python
+list_for_slicing[-4:]
+list_for_slicing[1:5]
+```
+
+both give
+
+```output
+[['chlorine', 'Cl'], ['bromine', 'Br'], ['iodine', 'I'], ['astatine', 'At']]
+```
+
+Ok, now look at that though:
+
+
+
+```python
+list_for_slicing[1:6]
+```
+
+
+```output
+[['chlorine', 'Cl'], ['bromine', 'Br'], ['iodine', 'I'], ['astatine', 'At']]
+```
+
+🧐
+
+Python does *not* enforce the upper bound of an index range. In fact,
+
+```python
+list_for_slicing[10:50]
+```
+
+```output
+[]
+```
+
+This is a bit weird. In particular it's confusing that the first here works (and coincidentially gives the correct result), but the second one throws an error:
+
+```python
+list_for_slicing[1:5] # works
+list_for_slicing[5] # error 
+```
+
+```output
+---------------------------------------------------------------------------
+IndexError                                Traceback (most recent call last)
+Cell In[38], line 1
+----> 1 list_for_slicing[5]
+
+IndexError: list index out of range
+```
+
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 :::::::::::::::::::::::::::::::::::::::  challenge
 
 ## Non-Continuous Slices
@@ -454,6 +519,10 @@ beatles[::2]
 :::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+
 
 If you want to take a slice from the beginning of a sequence, you can omit the first index in the
 range:
