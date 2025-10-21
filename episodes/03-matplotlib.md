@@ -250,7 +250,7 @@ in the subplot on the right looks slanted. Why is this?
 
 ## Solution
 
-Because matplotlib interpolates (draws a straight line) between the points.
+Because matplotlib by default draws a straight line between the points. 
 One way to do avoid this is to use the Matplotlib `drawstyle` option:
 
 ```python
